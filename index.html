@@ -6,286 +6,180 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Lidhinsha M L Khan — Cybersecurity Portfolio</title>
 
-    <!-- Tailwind Play CDN -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Simple custom styles -->
-    <style>
-        :root {
-            --bg: #0b0f0b;
-            --panel: #07100a;
-            --accent-green: #00ff6a;
-            --accent-red: #ff3b3b;
-            --muted: #9aa6a1;
-        }
-
-        html,
-        body {
-            background: linear-gradient(180deg, #050704 0%, #07100a 100%);
-            color: #dbe9d9;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-        }
-
-        .glitch {
-            text-shadow:
-                1px 0 var(--accent-green),
-                -1px 0 var(--accent-red);
-        }
-
-        .ticker {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-            color: var(--muted);
-        }
-
-        /* subtle code-style boxes */
-        .codebox {
-            background: rgba(0, 0, 0, 0.45);
-            border: 1px solid rgba(0, 255, 106, 0.06);
-        }
-
-        .tag {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-            font-size: 0.75rem;
-            letter-spacing: 0.06em;
-        }
-
-        /* small card hover accent */
-        .card:hover {
-            box-shadow: 0 12px 30px rgba(0, 255, 106, 0.06);
-            transform: translateY(-4px);
-            transition: .18s ease;
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="antialiased leading-relaxed">
+<body class="bg-[#050505] text-gray-200">
 
-    <div class="max-w-5xl mx-auto p-6 md:p-10">
-        <!-- Header -->
-        <header class="flex items-center justify-between mb-8">
-            <div>
-                <h1 class="text-2xl md:text-3xl font-semibold glitch">LIDHINSHA M LATHEEF KHAN</h1>
-                <p class="text-sm ticker mt-1">Cybersecurity • Penetration Testing • SOC Operations</p>
-            </div>
+    <!-- GLOBAL GLOW BACKGROUND EFFECT -->
+    <div class="absolute inset-0 overflow-hidden -z-10">
+        <div class="glow-ball"></div>
+        <div class="glow-ball2"></div>
+    </div>
 
-            <div class="text-right">
-                <p class="text-sm text-green-400 font-medium">Kottayam, Kerala</p>
-                <div class="mt-2 flex items-center gap-3 justify-end">
-                    <a href="mailto:lidhinshamlatheefkhan786@gmail.com"
-                        class="tag px-3 py-1 rounded codebox">lidhinshamlatheefkhan786@gmail.com</a>
-                    <a href="tel:+919037224274" class="tag px-3 py-1 rounded codebox">+91 9037224274</a>
-                </div>
+    <div class="max-w-6xl mx-auto p-6">
+
+        <!-- HEADER -->
+        <header class="py-8 animate-fadeIn">
+            <h1 class="text-4xl md:text-5xl font-bold neon-text">
+                LIDHINSHA <span class="text-red-500">M</span> LATHEEF KHAN
+            </h1>
+            <p class="mt-2 text-green-400 tracking-wide text-sm hacker-text">
+                Cybersecurity • Pentesting • SOC Operations
+            </p>
+
+            <div class="mt-4 text-sm space-y-1">
+                <p>Kottayam, Kerala — 686509</p>
+                <p>Email: <a href="mailto:lidhinshamlatheefkhan786@gmail.com"
+                        class="text-green-300 hover:text-red-400 transition">lidhinshamlatheefkhan786@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919037224274" class="text-green-300 hover:text-red-400 transition">+91
+                        9037224274</a></p>
             </div>
         </header>
 
+        <!-- MAIN GRID -->
         <main class="grid md:grid-cols-3 gap-8">
-            <!-- Left column -->
-            <section class="md:col-span-2 space-y-6">
-                <!-- About / Summary -->
-                <div class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <div class="flex items-start justify-between">
-                        <h2 class="text-lg font-semibold text-green-400">Profile</h2>
-                        <span class="tag text-xs">Info</span>
-                    </div>
-                    <p class="mt-3 text-sm text-gray-200">
-                        BCA graduate (pursuing MCA) with an Advanced Diploma in Cyber Defence. Hands-on experience in
-                        SIEM (Wazuh), penetration testing, and SOC workflows. Completed a 6-month offensive security
-                        internship and several security tooling projects. Seeking roles in Information Security / SOC /
-                        Offensive Security.
+
+            <!-- LEFT (MAIN CONTENT) -->
+            <section class="md:col-span-2 space-y-8">
+
+                <!-- SUMMARY -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">PROFILE</h2>
+                    <p class="mt-3 text-sm text-gray-300">
+                        MCA student & BCA graduate with hands-on experience in SIEM (Wazuh), penetration testing,
+                        SOC operations & offensive security projects. Completed a 6-month offensive cybersecurity
+                        internship.
                     </p>
-                    <div class="mt-4 flex gap-3">
-                        <a href="#projects" class="px-3 py-1 rounded tag codebox">Projects</a>
-                        <a href="#experience" class="px-3 py-1 rounded tag codebox">Experience</a>
-                        <a href="#contact" class="px-3 py-1 rounded tag codebox">Contact</a>
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">PROJECTS</h2>
+
+                    <div class="space-y-4 mt-3">
+                        <div class="proj">
+                            <p class="proj-title">Wazuh SIEM Deployment</p>
+                            <p class="proj-sub">Log monitoring • IDS • Incident response</p>
+                        </div>
+
+                        <div class="proj">
+                            <p class="proj-title">Penetration Testing Lab</p>
+                            <p class="proj-sub">Nmap • Burp • Metasploit • Custom scripts</p>
+                        </div>
+
+                        <div class="proj">
+                            <p class="proj-title">CTF Challenges</p>
+                            <p class="proj-sub">50+ TryHackMe & HackTheBox • Privilege escalation</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Projects -->
-                <div id="projects" class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <h3 class="text-green-400 font-semibold">Projects & Highlights</h3>
-                    <ul class="mt-3 space-y-3 text-sm text-gray-200">
-                        <li>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <strong>Wazuh SIEM Deployment</strong>
-                                    <div class="text-xs text-gray-400">Log monitoring, IDS, incident response</div>
-                                </div>
-                                <span class="tag codebox px-2 py-1 rounded">SIEM</span>
-                            </div>
-                        </li>
+                <!-- EXPERIENCE -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">EXPERIENCE</h2>
 
-                        <li>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <strong>Penetration Testing Lab</strong>
-                                    <div class="text-xs text-gray-400">Nmap, Burp, Metasploit, custom Python scripts
-                                    </div>
-                                </div>
-                                <span class="tag codebox px-2 py-1 rounded">Pentest</span>
-                            </div>
-                        </li>
+                    <div class="mt-3">
+                        <p class="font-semibold text-green-300">Offensive Cybersecurity Intern (6 Months)</p>
+                        <p class="text-sm text-gray-300">InLighnX Global Pvt. Ltd — Remote</p>
 
-                        <li>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <strong>CTF Challenges</strong>
-                                    <div class="text-xs text-gray-400">50+ TryHackMe & HackTheBox — privilege escalation
-                                        & exploitation</div>
-                                </div>
-                                <span class="tag codebox px-2 py-1 rounded">CTF</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Experience -->
-                <div id="experience" class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-green-400 font-semibold">Work Experience</h3>
-                        <span class="text-sm text-gray-400">6 months</span>
-                    </div>
-
-                    <div class="mt-3 text-sm text-gray-200 space-y-2">
-                        <p class="font-medium">Offensive Cybersecurity Intern (Remote) — InLighnX Global Pvt. Ltd</p>
-                        <ul class="list-disc ml-5 mt-1 text-gray-300">
-                            <li>Built security tooling & scripts (subdomain enumerator, scanners, crackers).</li>
-                            <li>Worked with Python, sockets, networking concepts and OOP.</li>
-                            <li>Delivered larger projects: FTP Cracker, Backdoor Reverse Shell, Information Stealer, SSH
-                                Botnet (learning & research context).</li>
+                        <ul class="list-disc ml-5 mt-2 text-sm text-gray-400 space-y-1">
+                            <li>Security tooling: Subdomain finder, scanners, brute-force tools</li>
+                            <li>Python networking, sockets, OOP</li>
+                            <li>Major Projects: FTP Cracker, Reverse Shell, Info Stealer, SSH Botnet</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Certifications -->
-                <div class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <h3 class="text-green-400 font-semibold">Certifications</h3>
+                <!-- CERTIFICATIONS -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">CERTIFICATIONS</h2>
+
                     <div class="mt-3 flex flex-wrap gap-3">
-                        <span class="tag px-3 py-1 rounded codebox">CISCO: Intro to Cybersecurity</span>
-                        <span class="tag px-3 py-1 rounded codebox">IBM: Cybersecurity Fundamentals</span>
-                        <span class="tag px-3 py-1 rounded codebox">Microsoft Learn: MCRA &amp; MCSB</span>
+                        <span class="tag">CISCO — Intro to Cybersecurity</span>
+                        <span class="tag">IBM — Cybersecurity Fundamentals</span>
+                        <span class="tag">Microsoft — MCRA / MCSB</span>
                     </div>
                 </div>
+
             </section>
 
-            <!-- Right column -->
-            <aside class="space-y-6">
-                <!-- Skills -->
-                <div class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <h3 class="text-green-400 font-semibold">Skills</h3>
-                    <div class="mt-3 text-sm text-gray-200">
-                        <p class="font-medium">Tools</p>
-                        <div class="mt-2 grid grid-cols-2 gap-2">
-                            <span class="px-2 py-1 rounded tag codebox">Wazuh</span>
-                            <span class="px-2 py-1 rounded tag codebox">Wireshark</span>
-                            <span class="px-2 py-1 rounded tag codebox">Metasploit</span>
-                            <span class="px-2 py-1 rounded tag codebox">Nmap</span>
-                            <span class="px-2 py-1 rounded tag codebox">Burp Suite</span>
-                            <span class="px-2 py-1 rounded tag codebox">John the Ripper</span>
-                            <span class="px-2 py-1 rounded tag codebox">Hydra</span>
-                        </div>
+            <!-- RIGHT SIDEBAR -->
+            <aside class="space-y-8">
 
-                        <p class="font-medium mt-3">Programming</p>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag codebox px-2 py-1 rounded">Python</span>
-                            <span class="tag codebox px-2 py-1 rounded">PHP</span>
-                            <span class="tag codebox px-2 py-1 rounded">JavaScript</span>
-                            <span class="tag codebox px-2 py-1 rounded">SQL</span>
-                            <span class="tag codebox px-2 py-1 rounded">PowerShell</span>
-                        </div>
+                <!-- SKILLS -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">SKILLS</h2>
 
-                        <p class="font-medium mt-3">Core</p>
-                        <div class="mt-2 flex flex-col gap-1 text-sm text-gray-300">
-                            <span>Security operations • Penetration testing • Networking</span>
-                            <span>SOC operations • Threat intelligence</span>
-                        </div>
+                    <h3 class="skill-head">Tools</h3>
+                    <div class="skill-grid">
+                        <span>Wazuh</span><span>Wireshark</span><span>Metasploit</span>
+                        <span>Nmap</span><span>Burp Suite</span><span>Hydra</span>
+                    </div>
 
-                        <p class="font-medium mt-3">Soft</p>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag codebox px-2 py-1 rounded">Communication</span>
-                            <span class="tag codebox px-2 py-1 rounded">Problem-solving</span>
-                            <span class="tag codebox px-2 py-1 rounded">Teamwork</span>
-                            <span class="tag codebox px-2 py-1 rounded">Adaptability</span>
-                        </div>
+                    <h3 class="skill-head">Programming</h3>
+                    <div class="skill-grid">
+                        <span>Python</span><span>PHP</span><span>JavaScript</span>
+                        <span>SQL</span><span>PowerShell</span>
+                    </div>
+
+                    <h3 class="skill-head">Technical</h3>
+                    <p class="text-sm mt-1 text-gray-300">Pentesting • SOC • Networking • Threat Intelligence</p>
+                </div>
+
+                <!-- EDUCATION -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">EDUCATION</h2>
+
+                    <div class="edu">
+                        <p class="edu-title">MCA — Manipal University Jaipur</p>
+                        <p class="edu-meta">2025 – Present</p>
+                    </div>
+
+                    <div class="edu">
+                        <p class="edu-title">BCA — MES College Erumely</p>
+                        <p class="edu-meta">2021 – 2024</p>
+                    </div>
+
+                    <div class="edu">
+                        <p class="edu-title">Higher Secondary — Govt VHSS Ponkunnam</p>
+                        <p class="edu-meta">2019 – 2021</p>
                     </div>
                 </div>
 
-                <!-- Education -->
-                <div class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <h3 class="text-green-400 font-semibold">Education</h3>
-                    <div class="mt-3 text-sm text-gray-200 space-y-3">
-                        <div>
-                            <div class="flex justify-between items-center">
-                                <strong>Manipal University Jaipur</strong>
-                                <span class="text-xs text-gray-400">2025 - present</span>
-                            </div>
-                            <div class="text-xs text-gray-400">MCA (Online)</div>
-                        </div>
+                <!-- CONTACT CARD -->
+                <div class="card animate-slideUp">
+                    <h2 class="section-title">CONTACT</h2>
 
-                        <div>
-                            <div class="flex justify-between items-center">
-                                <strong>MES College Erumely</strong>
-                                <span class="text-xs text-gray-400">2021 - 2024</span>
-                            </div>
-                            <div class="text-xs text-gray-400">BCA</div>
-                        </div>
+                    <p class="mt-2 text-sm">Email: lidhinshamlatheefkhan786@gmail.com</p>
+                    <p class="text-sm">Phone: +91 9037224274</p>
 
-                        <div>
-                            <div class="flex justify-between items-center">
-                                <strong>Government V.H.S.S Ponkunnam</strong>
-                                <span class="text-xs text-gray-400">2019 - 2021</span>
-                            </div>
-                            <div class="text-xs text-gray-400">Higher Secondary (Science)</div>
-                        </div>
-                    </div>
+                    <button id="copyEmail" class="btn mt-4">Copy Email</button>
                 </div>
 
-                <!-- Quick contact card -->
-                <div id="contact" class="p-5 rounded-2xl card bg-[#07100a] border border-gray-800">
-                    <h3 class="text-green-400 font-semibold">Contact</h3>
-                    <div class="mt-3 text-sm text-gray-200 space-y-2">
-                        <div><strong>Email:</strong> <a class="text-green-300 hover:underline"
-                                href="mailto:lidhinshamlatheefkhan786@gmail.com">lidhinshamlatheefkhan786@gmail.com</a>
-                        </div>
-                        <div><strong>Phone:</strong> <a class="text-green-300 hover:underline"
-                                href="tel:+919037224274">+91 9037224274</a></div>
-                        <div><strong>Location:</strong> Kottayam, Kerala - 686509</div>
-                    </div>
-
-                    <div class="mt-4">
-                        <button id="copyEmail"
-                            class="w-full py-2 rounded bg-gradient-to-r from-[#002b00] to-[#003900] border border-green-700 text-sm tag">Copy
-                            email</button>
-                    </div>
-                </div>
             </aside>
+
         </main>
 
-        <!-- Footer / small terminal -->
-        <footer class="mt-10 text-center text-xs text-gray-500">
-            <div class="inline-block px-3 py-2 rounded codebox">Ready to collaborate • Open to internships & entry roles
-            </div>
-           
+        <footer class="text-center text-xs mt-10 mb-4 text-gray-600">
+            Hacker-Theme Portfolio • Tailwind + Custom CSS • Designed by Ramees
         </footer>
+
     </div>
 
-    <!-- Minimal JS -->
     <script>
-        // Copy email button
-        document.getElementById('copyEmail').addEventListener('click', async () => {
-            const email = 'lidhinshamlatheefkhan786@gmail.com';
-            try {
-                await navigator.clipboard.writeText(email);
-                const btn = document.getElementById('copyEmail');
-                btn.textContent = 'Email copied!';
-                setTimeout(() => btn.textContent = 'Copy email', 1800);
-            } catch (e) {
-                alert('Copy failed — email: ' + email);
-            }
-        });
-
-        // Small keyboard 'fake terminal' vibe: show console log (optional)
-        console.log('%c LIDHINSHA M LATHEEF KHAN — portfolio loaded ', 'color: #00ff6a; background:#001b00; padding:6px 10px; border-radius:4px;');
+        document.getElementById("copyEmail").onclick = () => {
+            navigator.clipboard.writeText("lidhinshamlatheefkhan786@gmail.com");
+            const btn = document.getElementById("copyEmail");
+            btn.textContent = "Copied!";
+            setTimeout(() => (btn.textContent = "Copy Email"), 1500);
+        };
     </script>
+
 </body>
 
 </html>
